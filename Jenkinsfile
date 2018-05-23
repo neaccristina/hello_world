@@ -1,12 +1,12 @@
 pipeline
 {
 agent {
-docker { image 'node:9-alpine' }
+docker { image 'cornelf/docker-build:slim' }
 }
 stages {
 stage('Test') {
 steps {
-sh 'node --version'
+sh 'echo "hello"'
 }
 }
 }
